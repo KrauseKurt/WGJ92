@@ -2,12 +2,9 @@
 
 public class BallBouncer : MonoBehaviour
 {
-    [SerializeField]
     [Tooltip("Just for debugging, adds some velocity during OnEnable")]
-    private Vector3 initialVelocity;
-
-    [SerializeField]
-    private float minVelocity = 10f;
+    public Vector3 initialVelocity;
+    public float minVelocity = 10f;
 
     private Vector3 lastFrameVelocity;
     private Rigidbody rb;
