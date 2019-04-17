@@ -1018,7 +1018,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.8
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1376,6 +1376,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectMenu: {fileID: 8300000, guid: d184c76c7c8ac684ab74ecd8de36e998, type: 3}
   moveMenu: {fileID: 8300000, guid: 256c2f654f9466343b8baa2039453417, type: 3}
+  monsterRoars:
+  - {fileID: 8300000, guid: 60d4507c3c1a80f4d8b9fbdb3b019782, type: 3}
+  - {fileID: 8300000, guid: 21e8d7ff61f8640409f3dea0098a2629, type: 3}
+  destructionSounds:
+  - {fileID: 8300000, guid: 8a42cda59e1509845bd37b9ee7c590ba, type: 3}
+  - {fileID: 8300000, guid: 9fa4862284dc5de4b9bac503a4e516b6, type: 3}
+  - {fileID: 8300000, guid: 1be35526f2b833f4eb1243277a026602, type: 3}
+  - {fileID: 8300000, guid: 0e917bc21888c4242804a99bd29b1645, type: 3}
+  - {fileID: 8300000, guid: a9a90818b993c084cad3bcdd892e8cdf, type: 3}
+  - {fileID: 8300000, guid: da6fb195e3606844286ff2a2630f987f, type: 3}
+  - {fileID: 8300000, guid: 2c9573b57ef16a94e9892dfde24aa25f, type: 3}
+  - {fileID: 8300000, guid: 2a20fd9f744017e428b19a39375d02b6, type: 3}
+  - {fileID: 8300000, guid: adb42f0838a515145ac6384974238cdd, type: 3}
+  - {fileID: 8300000, guid: d9a30c5fe94dbae40b35527892c90ac9, type: 3}
+  - {fileID: 8300000, guid: 2b3a330d75fbca0459ffc5e6e1a5acf5, type: 3}
+  - {fileID: 8300000, guid: 188629ed0b8041d4f8ae70d68f7b8e7f, type: 3}
+  - {fileID: 8300000, guid: 0c1a3cae62e1ad7458358e5e3292c1e3, type: 3}
+  - {fileID: 8300000, guid: e9e2992ca38f95b42a19d2a043b1dacc, type: 3}
+  - {fileID: 8300000, guid: 8e58c80c29578d642b4b62cd25a124e7, type: 3}
+  - {fileID: 8300000, guid: e5bc41a5b769e074b87e64dfc3a4675a, type: 3}
+  - {fileID: 8300000, guid: 9037681a200b7c743afdd5e5b2347f32, type: 3}
+  - {fileID: 8300000, guid: dfab5452144b1164791b84edde236e87, type: 3}
+  - {fileID: 8300000, guid: 71e1aff5a237e3449bbf7296e9dda556, type: 3}
+  monsterLaunch: {fileID: 8300000, guid: 02eade09b549d5a42ac2c3856c704b65, type: 3}
 --- !u!114 &1593526667
 MonoBehaviour:
   m_ObjectHideFlags: 0

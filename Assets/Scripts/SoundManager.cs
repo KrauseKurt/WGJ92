@@ -8,9 +8,14 @@ public class SoundManager : MonoBehaviour
 
     public AudioClip selectMenu;
     public AudioClip moveMenu;
+    public AudioClip[] monsterRoars;
+    public List<AudioClip> destructionSounds = new List<AudioClip>();
+    public AudioClip monsterLaunch;
+
 
     public void Start()
     {
+        DontDestroyOnLoad(this.gameObject);
         aSource = GetComponent<AudioSource>();
     }
 
@@ -22,6 +27,29 @@ public class SoundManager : MonoBehaviour
     public void PlaySelectMenu()
     {
         aSource.PlayOneShot(selectMenu);
+    }
+
+    public void PlayMonsterLaunch()
+    {
+        aSource.PlayOneShot(monsterLaunch);
+    }
+
+    public void PlayRandomDestructionSound()
+    {
+        int rand = Random.Range(0,destructionSounds.Count);
+        aSource.PlayOneShot(destructionSounds[rand]);
+    }
+
+    public void PlayRoar(bool player1)
+    {
+        if (player1)
+        {
+            aSource.PlayOneShot(monsterRoars[0]);
+        }
+        else
+        {
+            aSource.PlayOneShot(monsterRoars[1]);
+        }
     }
 
 
