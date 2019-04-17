@@ -45,7 +45,7 @@ public class Player : MonoBehaviour
     {
         var speed = lastFrameVelocity.magnitude;
         var direction = Vector3.Reflect(lastFrameVelocity.normalized, collisionNormal);
-        print(this.transform.rotation.ToEulerAngles());
+        
         Debug.Log("Out Direction: " + direction);
         rb.velocity = direction * Mathf.Max(speed, minVelocity);
     }
