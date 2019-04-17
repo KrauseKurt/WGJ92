@@ -17,14 +17,17 @@ public class Player : MonoBehaviour
         spr = GetComponentInChildren<SpriteRenderer>();
         rb = GetComponent<Rigidbody>();
         //rb.velocity = initialVelocity;
-        rb.AddRelativeForce(Vector3.forward * 200);
-        
-        
+        //rb.AddRelativeForce(Vector3.forward * 200);
     }
 
     private void Update()
     {
         lastFrameVelocity = rb.velocity;
+    }
+
+    public void LaunchPlayer()
+    {
+        rb.AddRelativeForce(Vector3.forward * 200);
     }
 
     private void OnCollisionEnter(Collision collision)

@@ -9,6 +9,7 @@ public class Launcher : MonoBehaviour
     public e_player player;
     public float speed = 5f;
     public Vector3 vec;
+    public GameObject playerObj;
 
     private Rigidbody rbody;
 
@@ -25,6 +26,14 @@ public class Launcher : MonoBehaviour
         vec = this.transform.rotation.eulerAngles;
     }
 
+
+    private void Shoot()
+    {
+        GameObject obj = Instantiate(playerObj,this.transform.position,this.transform.rotation,this.transform);
+        obj.transform.SetParent(null);
+        obj.GetComponent<Player>().LaunchPlayer();
+    }
+
     private void Rotate()
     {
         if(player == e_player.Left)
@@ -36,6 +45,10 @@ public class Launcher : MonoBehaviour
             else if (Input.GetKey(KeyCode.S) && vec.y <= 315)
             {
                 this.transform.Rotate(Vector3.up * speed * Time.deltaTime);
+            }
+            else if (Input.GetKey(KeyCode.Space))
+            {
+                Shoot();
             }
 
         }
